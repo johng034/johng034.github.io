@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		
 	</head>
 	<body class="is-preload">
 
@@ -18,34 +20,32 @@
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
-					<div id="intro">
-						<h1>Welcome to<br />
-							my Portfolio</h1>
-						<p>Hello, my name is John Gonzalez. I am an aspiring data scientist searching for<br />
-							novel trends in a data-driven world.</p>
+					<!-- <div id="intro">
+						<h1>John Gonzalez</h1>
+						<p>Continuous learning</p>
 						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly"></a></li>
 						</ul>
-					</div>
+					</div> -->
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header" class="logo">
 						<a href="index.html" class="logo">John Gonzalez</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">My Projects</a></li>
+							<li class="active"><a href="index.html">Projects</a></li>
 							<li><a href="generic.html">About Me</a></li>
 							<li><a href="contact.html">Contact</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
 						</ul>
 						<ul class="icons">
-							<li><a href="resume.html" class="icon solid">Resume<span class="label">Resume</span></a></li>
+							<!-- <li><a href="resume.html" class="icon solid">Resume<span class="label">Resume</span></a></li> -->
 							<li><a href="https://github.com/johng034" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.kaggle.com/johngonzalez34" target="_blank" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-							<li><a href="https://www.linkedin.com/in/john-gonzalez-3771491b3/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="https://www.kaggle.com/johngonzalez34" target="_blank" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/john-gonzalez-data/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						</ul>
 					</nav>
 
@@ -55,60 +55,71 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="#">My Best Project</h2>
-									<p>This is a summary of my best project.</p>
+									<h2 style="font-size: 75px;">My Projects</h2>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions stacked">
-									<li><a href="#" class="primary button large">Check it out</a></li>
-									<li><a href="#" class="button large">GitHub</a></li>
-								</ul>
+								<p style="text-align: center;">These are some of the projects I have done. A full list of projects can be found on my Github profile.</p>
+								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
+								<!-- <ul class="actions stacked"> -->
+									<!-- <li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button large">Check it out</a></li> -->
+									<!-- <li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button large">GitHub Repo</a></li> -->
+								<!-- </ul> -->
 							</article>
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="#">Project 1</h2>
+										<h2>Quelle langue</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="image fit" style="width: 100%; height: 350px;"><img src="./images/language-classifier.png" alt="" /></a>
+									<p style="text-indent: 30px;">As an avid language learner, I enjoy listening to others speak foreign languages. Sometimes, I'll make a sorry attempt at guessing the language.
+										So I thought it would be interesting if I could create a model that could hopefully do better <span id=dots0>...</span></p> 									
+									
+									<span id="languageMore">
+									<p>For this project, I created a model using the <b>Naive Bayes classification</b> algorithm to predict the language of typed text. 
+									   The data for this project came from <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis" target="_blank">Kaggle.</a></p>
+									</span>
+
+									<ul class="actions stacked">
+										<li><button class = "ReadMore" id="languageReadMore" onclick="readMore()">Read more</button></li>
+										<li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button">Check it out</a></li>
+										<li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button">GitHub</a></li>
+									</ul>
+								</article>
+
+								<!-- Photo by Janko Ferlic from Pexels -->
+								<article>
+									<header>
+										<h2>Twitter talk</h2>
+									</header>
+									<a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="image fit" style="width: 100%; height: 340px;"><img src="./images/common-words.png" alt=""></a>
 									<p>Summary of what my project is about.</p>
 									<ul class="actions stacked">
-										<li><a href="#" class="primary button">Check it out</a></li>
-										<li><a href="#" class="button">GitHub</a></li>
+										<!-- <li><button class = "ReadMore" onclick="readMore()">Read more</button></li> -->
+										<li><a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="primary button">Check it out</a></li>
+										<li><a href="https://github.com/johng034/language-tweets" target="_blank" class="button">GitHub</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Project 2</h2>
+										<h2>Customer Analysis</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="https://github.com/johng034/customer-segmentation" target="_blank" class="image fit" style="width: 100%; height: 400px;"><img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/01/17162345/clustering-algorithms-in-Machine-Learning.jpg" alt="" /></a>
 									<p>Summary of what my project is about.</p>
 									<ul class="actions stacked">
-										<li><a href="#" class="primary button">Check it out</a></li>
-										<li><a href="#" class="button">GitHub</a></li>
+										<!-- <li><a href="#" class="primary button">Check it out</a></li> -->
+										<li><a href="https://github.com/johng034/customer-segmentation" target="_blank" class="button">GitHub</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Project 3</h2>
+										<h2>Book Data Collection</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<a href="https://github.com/johng034/mit-books" target="_blank" class="image fit" style="width: 100%; height: 400px;"><img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></a>
 									<p>Summary of what my project is about.</p>
 									<ul class="actions stacked">
-										<li><a href="#" class="primary button">Check it out</a></li>
-										<li><a href="#" class="button">GitHub</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Project 4</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Summary of what my project is about.</p>
-									<ul class="actions stacked">
-										<li><a href="#" class="primary button">Check it out</a></li>
-										<li><a href="#" class="button">GitHub</a></li>
+										<!-- <li><a href="#" class="primary button">Check it out</a></li> -->
+										<li><a href="https://github.com/johng034/mit-books" target="_blank" class="button">GitHub</a></li>
 									</ul>
 								</article>
 							</section>
@@ -120,20 +131,20 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section class="split contact">
-							<section>
+							<!-- <section>
 								<h3>Email</h3>
-								<p><a href="mailto:johnug034@gmail.com" target="_blank">JohnUG34@gmail.com</a></p>
-							</section>
-							<section>
+								<p><a href="mailto:johnug034@gmail.com" target="_blank">JohnUGonzalez@gmail.com</a></p>
+							</section> -->
+							<!-- <section>
 								<h3>Resume</h3>
 								<p><a href="resume.html">PDF of my resume</a></p>
-							</section>
+							</section> -->
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
+									<li><a href="mailto:johnugonzalez@gmail.com" target="_blank" class="icon far fa-envelope"><span class="label"></span></a></li>
 									<li><a href="https://github.com/johng034" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.kaggle.com/johngonzalez34" target="_blank" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-									<li><a href="https://www.linkedin.com/in/john-gonzalez-3771491b3/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.linkedin.com/in/john-gonzalez-data/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -141,7 +152,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
@@ -154,6 +165,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/custom.js"></script>
 
 	</body>
 </html>
