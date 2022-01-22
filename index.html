@@ -9,6 +9,7 @@
 		<title>John Gonzalez's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/bar-chart_1f4ca.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/custom.css" />
@@ -29,7 +30,7 @@
 					</div> -->
 
 				<!-- Header -->
-					<header id="header" class="logo">
+					<header id="header">
 						<a href="index.html" class="logo">John Gonzalez</a>
 					</header>
 
@@ -73,15 +74,21 @@
 									</header>
 									<a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="image fit" style="width: 100%; height: 350px;"><img src="./images/language-classifier.png" alt="" /></a>
 									<p style="text-indent: 30px;">As an avid language learner, I enjoy listening to others speak foreign languages. Sometimes, I'll make a sorry attempt at guessing the language.
-										So I thought it would be interesting if I could create a model that could hopefully do better <span id=dots0>...</span></p> 									
+										So I thought it would be interesting if I could create a model that ideally could do much better<span id=dots0>...</span></p> 									
 									
 									<span id="languageMore">
-									<p>For this project, I created a model using the <b>Naive Bayes classification</b> algorithm to predict the language of typed text. 
-									   The data for this project came from <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis" target="_blank">Kaggle.</a></p>
+										<p>
+											For this project, I created a model using the <b>Naive Bayes classification</b> algorithm to predict the language of typed text. 
+									   		The data for this project came from <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis" target="_blank">Kaggle.</a>
+										</p>
+										<p>
+											The Naive Bayes algorithm outperformed the Random Forest and K Nearest Neighbors algorithms. 
+											After training the algorithm, I created a web app using Streamlit to allow users to try it out for themselves
+										</p>
 									</span>
 
 									<ul class="actions stacked">
-										<li><button class = "ReadMore" id="languageReadMore" onclick="readMore()">Read more</button></li>
+										<li><button id="languageReadMore" onclick="languageReadMore()">Read more</button></li>
 										<li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button">Check it out</a></li>
 										<li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button">GitHub</a></li>
 									</ul>
@@ -89,16 +96,35 @@
 
 								<!-- Photo by Janko Ferlic from Pexels -->
 								<article>
+
+
+
 									<header>
 										<h2>Twitter talk</h2>
 									</header>
 									<a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="image fit" style="width: 100%; height: 340px;"><img src="./images/common-words.png" alt=""></a>
-									<p>Summary of what my project is about.</p>
+									<p style="text-indent: 30px;">Vocabulary is very important when learning a new language. One of the most effective ways to increase one’s lexicon is to study 
+										the most common words in a language. The goal of this project was to find the most common words used in tweets<span id=dots1>...</span></p> 
+
+										<span id="twitterMore">
+											<p>
+												For this project, I used the Twitter API to collect 200 tweets from 10 profiles in 5 different languages. This would result in 10,000 tweets in total 
+												(in reality, this number came out lower because some of the accounts did not have 200 tweets on their profile or some tweets were only emojis). 
+											</p>
+											<p>
+												After cleaning the data, I wrote some code to calculate the word frequencies and used the data to create a word cloud for each language.
+												I created a web app where the user can view the top <em>x</em> number of words in both tabular form and as a word cloud for five languages.
+											</p>
+										</span>
 									<ul class="actions stacked">
-										<!-- <li><button class = "ReadMore" onclick="readMore()">Read more</button></li> -->
+										<li><button id = "twitterReadMore" onclick="twitterReadMore()">Read more</button></li>
 										<li><a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="primary button">Check it out</a></li>
 										<li><a href="https://github.com/johng034/language-tweets" target="_blank" class="button">GitHub</a></li>
 									</ul>
+
+
+
+
 								</article>
 								<article>
 									<header>
@@ -107,7 +133,7 @@
 									<a href="https://github.com/johng034/customer-segmentation" target="_blank" class="image fit" style="width: 100%; height: 400px;"><img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/01/17162345/clustering-algorithms-in-Machine-Learning.jpg" alt="" /></a>
 									<p>Summary of what my project is about.</p>
 									<ul class="actions stacked">
-										<!-- <li><a href="#" class="primary button">Check it out</a></li> -->
+										<!-- <li><a href="#" class="primary button">Check it out</a></li> `-->
 										<li><a href="https://github.com/johng034/customer-segmentation" target="_blank" class="button">GitHub</a></li>
 									</ul>
 								</article>
