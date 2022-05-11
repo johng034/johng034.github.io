@@ -61,3 +61,8 @@ function booksReadMore() {
         moreText.style.display = "inline";
     }
 }
+
+function placement() {
+    var dots = document.getElementById("dots0");
+    var moreText = document.getElementById("languageMore");
+    var btnText = document.getElementById("languageReadMore");
