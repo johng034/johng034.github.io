@@ -1,69 +1,21 @@
-function languageReadMore() {
-    var dots = document.getElementById("dots0");
-    var moreText = document.getElementById("languageMore");
-    var btnText = document.getElementById("languageReadMore");
+function readMore(clicked_id) {
+    // Select the correct project
+    let projects = document.getElementsByClassName("project-info");
+    let relevantInfo = projects[clicked_id];
 
+    // Get the information we are looking for
+    var dots = relevantInfo.getElementsByClassName("dots")[0];
+    var hiddenText = relevantInfo.getElementsByClassName("hidden-text")[0];
+    var buttonText = relevantInfo.getElementsByClassName("read-more-button")[0];
+
+    // Show or hide text
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
+        buttonText.innerHTML = "Read more";
+        hiddenText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
+        buttonText.innerHTML = "Read less";
+        hiddenText.style.display = "inline";
     }
-}
-
-function twitterReadMore() {
-    var dots = document.getElementById("dots1");
-    var moreText = document.getElementById("twitterMore");
-    var btnText = document.getElementById("twitterReadMore");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-
-function customerReadMore() {
-    var dots = document.getElementById("dots2");
-    var moreText = document.getElementById("customerMore");
-    var btnText = document.getElementById("customerReadMore");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-
-function booksReadMore() {
-    var dots = document.getElementById("dots3");
-    var moreText = document.getElementById("booksMore");
-    var btnText = document.getElementById("booksReadMore");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-
-function placement() {
-    var dots = document.getElementById("dots0");
-    var moreText = document.getElementById("languageMore");
-    var btnText = document.getElementById("languageReadMore");
 }

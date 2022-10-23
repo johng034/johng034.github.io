@@ -1,1 +1,30 @@
-#languageMore, #twitterMore, #booksMore, #customerMore {display: none;}
+.technologies {
+    margin: 0;
+    padding: 0;
+}
+
+.first-paragraph {
+    text-indent: 30px;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.results {
+    text-align: left;
+}
+
+.project-description {
+    text-align: center;
+}
+
+.knight-quote {
+    text-align: right;
+}
+
+.project-image {
+    max-width: 100%; 
+    height: auto;
+}
+

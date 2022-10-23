@@ -32,7 +32,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">John Gonzalez</a>
+						<a href="index.html" class="logo">Portfolio</a>
 					</header>
 
 				<!-- Nav -->
@@ -57,7 +57,7 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2 style="font-size: 350%;">My Projects</h2>
+									<h2 style="font-size: 350%;">Projects</h2>
 								</header>
 								<p style="text-align: center;">
 									Hey there, my name is John and welcome to my portfolio!<br>
@@ -73,62 +73,89 @@
 
 						<!-- Posts -->
 							<section class="posts">
-								
-								<!-- <article>
+
+								<article class="project-info">
 									<header>
-										<h2>Product Sales</h2>
+										<h2>Resume Review</h2>
+										<p class="project-description">Natural Language Processing (NLP)</p>
 									</header>
-									<a href="https://public.tableau.com/views/CustomerAnalysis_16517054386160/PurchasesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="https://public.tableau.com/static/images/Cu/CustomerAnalysis_16517054386160/PurchasesDashboard/4_3.png" alt="" /></a>
-									<p style="text-indent: 30px;">Beginning of the description for the project<span id=dots0>...</span></p> 									
+									<a href="https://johng034-keyword-collector-app-a2gjm1.streamlitapp.com/" target="_blank" class="image fit project-image"><img src="./images/resume-review.png" alt="" /></a>
 									
-									<span id="temp">
+									<p class="technologies"><strong>Technologies Used</strong>: Python <em>(pandas, RegEx, scikit-learn, Streamlit)</em></p>
+									<p class="first-paragraph">The job search process can be quite difficult and time-consuming, especially for those starting their careers or switching careers. During my search, I noticed that the “Data Analyst” role can vary from company to company. 
+										To increase the probability of receiving a callback, I tailor my resume for each application by including keywords found in the job description.<span class="dots">...</span></p> 									
+									
+									<span class="hidden-text">
 										<p>
-											The rest of the description
+											There are websites that help you acomplish this task, such as <a href="https://resumeworded.com/index.php" target="_blank">Resume Worded</a> and <a href="https://www.jobscan.co/" target="_blank">Jobscan</a>, but these are paid services. Therefore, I created this free web application to help job seekers.
 										</p>
 										<p>
-											Can have multiple paragraphs
+											This web app works by selecting the most frequent words in the job description. Then the application parses your resume to see which keywords are included.
+											For example, if "<em>SQL</em>" gets mentioned numerous times, we may assume it is important, so we check if your resume contains the word "<em>SQL</em>".
+										</p>
+										<p>
+											Finally, a percentage score is generated. 0% means that no keywords are included, whereas 100% means that all the keywords are included. The user can see which keywords are included or missing and modify their resume accordingly.
 										</p>
 									</span>
 
 									<ul class="actions stacked">
-										<li><button id="languageReadMore" onclick="placement()">Read more</button></li>
-										<li><a href="https://public.tableau.com/views/CustomerAnalysis_16517054386160/PurchasesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/customer-segmentation" target="_blank" class="button">GitHub</a></li>
+										<li><button id="0" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+										<li><a href="https://johng034-keyword-collector-app-a2gjm1.streamlitapp.com/" target="_blank" class="primary button">Check it out</a></li>
+										<li><a href="https://github.com/johng034/keyword-collector" target="_blank" class="button">GitHub</a></li>
 									</ul>
-								</article> -->
+								</article>
 
-								<!-- <article>
+
+								<article class="project-info">
 									<header>
 										<h2>Bellabeat Case Study</h2>
+										<p class="project-description">Data Visualization</p>
 									</header>
-									<a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="https://public.tableau.com/static/images/Ca/CaseStudy_16518621735350/GrowthPotential/4_3.png" alt="" /></a>
-									<p style="text-indent: 30px;">Beginning of the description for the project<span id=dots0>...</span></p> 									
+									<a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit project-image"><img src="https://public.tableau.com/static/images/Ca/CaseStudy_16518621735350/GrowthPotential/4_3.png" alt="" /></a>
 									
-									<span id="temp">
+									<p class="technologies"><strong>Technologies Used</strong>: Tableau, Python <em>(Matplotlib, pandas)</em></p>
+									
+									<p class="first-paragraph">
+										It's helpful to know how your users navigate your application. With this information, we could improve the functionality and user experience. 
+										For this project, I analyzed data from Fitbit users to provide a recommendation for Bellabeat, a wellness company that develops fitness products for women.
+										<span class="dots">...</span>
+									</p> 									
+
+									<span class="hidden-text">
 										<p>
-											The rest of the description
+											There are two dashboards included in this project. The <a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">first dashboard</a> shows:
+											<ul class="results">
+												<li><strong>72%</strong> of users logged sleep data, but only 24% of users logged bodyweight data.</li>
+												<li><strong>61%</strong> of users who logged their bodyweight did so manually.</li>
+												<li>Most users slept on average between <strong>6 to 9 hours</strong> per night.</li><em></em>
+												<li>The histogram for calories burned is <em>bimodal</em>, meaning that there are two groups within the dataset. Most burn around <strong>2,000 calories</strong> per day while some burn closer to <strong>2,750 calories</strong> per day.</li>
+											</ul>
 										</p>
 										<p>
-											Can have multiple paragraphs
+											The <a href="https://public.tableau.com/views/FitbitUserDataOverview/PopularFeatures?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">second dashboard</a> can be found on my <a href="https://public.tableau.com/app/profile/john1232" target="_blank">Tableau profile</a>.
 										</p>
 									</span>
 
 									<ul class="actions stacked">
-										<li><button id="languageReadMore" onclick="placement()">Read more</button></li>
+										<li><button id="2" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
 										<li><a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
 										<li><a href="https://github.com/johng034/bellabeat-case-study" target="_blank" class="button">GitHub</a></li>
 									</ul>
-								</article> -->
+								</article>
 
-								<article>
+
+								<article class="project-info">
 									<header>
-										<h2>Quelle langue</h2>
+										<h2>Language Classifier</h2>
+										<p class="project-description">Supervised Machine Learning</p>
 									</header>
-									<a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="./images/language-classifier.png" alt="" /></a>
-									<p style="text-indent: 30px;">As an avid language learner, I enjoy listening to others speak foreign languages. Sometimes, I'll make a sorry attempt at guessing the language.
-										So I thought it would be interesting if I could create a model that ideally could do much better<span id=dots0>...</span></p> 									
+									<a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="image fit project-image"><img src="./images/language-classifier.png" alt="" /></a>
 									
-									<span id="languageMore">
+									<p class="technologies"><strong>Technologies Used</strong>: Python (<em>nltk, NumPy, pandas, scikit-learn, Streamlit</em>)</p>
+									<p class="first-paragraph">As an avid language learner, I enjoy listening to others speak foreign languages. Sometimes, I'll make a sorry attempt at guessing the language.
+										So I thought it would be interesting if I could create a model that ideally could do much better<span class="dots">...</span></p> 									
+
+									<span class="hidden-text">
 										<p>
 											For this project, I created a model using the <b>Random Forest classification</b> algorithm to predict the language of typed text. 
 									   		The data for this project came from the <a href="https://zenodo.org/record/841984#.YntTCejMJhE" target="_blank"><em>Wikipedia Language Identification Database</em>.</a>
@@ -140,24 +167,25 @@
 									</span>
 
 									<ul class="actions stacked">
-										<li><button id="languageReadMore" onclick="languageReadMore()">Read more</button></li>
+										<li><button id="3" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
 										<li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button">Check it out</a></li>
 										<li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button">GitHub</a></li>
 									</ul>
 								</article>
-								<!-- Photo by Janko Ferlic from Pexels -->
 
 
-								
-								<article>
+								<article class="project-info">
 									<header>
-										<h2>Twitter talk</h2>
+										<h2>Vocabulary Builder</h2>
+										<p class="project-description">Data Collection and Processing</p>
 									</header>
-									<a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="./images/common-words.png" alt=""></a>
-									<p style="text-indent: 30px;">Vocabulary is very important when learning a new language. One of the most effective ways to increase one's lexicon is to study 
-										the most common words in a language. The goal of this project was to find the most common words used in tweets<span id=dots1>...</span></p> 
+									<a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="image fit project-image"><img src="./images/common-words.png" alt=""></a>
+									
+									<p class="technologies"><strong>Technologies Used</strong>: Python (<em>nltk, pandas, RegEx, scikit-learn, Streamlit</em>), Twitter API</p>
+									<p class="first-paragraph">Vocabulary is very important when learning a new language. One of the most effective ways to increase one's lexicon is to study 
+										the most common words in a language. The goal of this project was to find the most common words used in tweets<span class="dots">...</span></p> 
 
-										<span id="twitterMore">
+										<span class="hidden-text">
 											<p>
 												For this project, I used the <b>Twitter API</b> with the <b>Tweepy</b> library to collect 200 tweets from 10 profiles in 5 different languages. This would result in 10,000 tweets in total 
 												(in reality, this number came out lower because some of the accounts did not have 200 tweets on their profile or some tweets were only emojis). 
@@ -168,58 +196,30 @@
 											</p>
 										</span>
 									<ul class="actions stacked">
-										<li><button id = "twitterReadMore" onclick="twitterReadMore()">Read more</button></li>
+										<li><button id="4" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
 										<li><a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="primary button">Check it out</a></li>
 										<li><a href="https://github.com/johng034/language-tweets" target="_blank" class="button">GitHub</a></li>
 									</ul>
 								</article>
-								
-								
-								
-								<article>
-									<header>
-										<h2>Git Repository Automation</h2>
-									</header>
-									<!-- <a href="https://github.com/johng034/customer-segmentation" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="c" alt="" /></a> -->
-									<!-- Photo Credit: https://unsplash.com/@synkevych-->
-									<a href="https://github.com/johng034/Automated-Repo-Initialization" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1488&q=80" alt="" /></a>
-									<p>
-										Creating a new repository is not very time-consuming, but it can be a bit annoying. In my case, it can also be somewhat confusing because I manage two GitHub profiles, 
-										one is used for learning/schoolwork and the other is used for professional work and personal projects<span id=dots2>...</span>
-									</p>
-									<span id="customerMore">
-										<p>
-											The steps I used to take when creating a new repository were: create the repository on GitHub with the correct account, clone the repository, configure the correct username and email, and finally open an IDE to begin working. 
-										</p>
-										<p>
-											As previously stated, this does not take too much time, but it would be nice to have a function that would do all these steps for me, so that's what I created. 
-											For this project, I used the <b>GitHub API</b> with <b>Python</b> to set up a repository with the correct account. Each GitHub repository is cloned into the correct folder to make it easier to manage all the projects. 
-											Now, instead of writing multiple lines of code to set up the repo, I can just type <code>create work new-project</code> and everything else gets taken care of.
-										</p>
-									</span>
-									<ul class="actions stacked">
-										<!-- <li><a href="#" class="primary button">Check it out</a></li> `-->
-										<li><button id = "customerReadMore" onclick="customerReadMore()">Read more</button></li>
-										<li><a href="https://github.com/johng034/Automated-Repo-Initialization" target="_blank" class="primary button">GitHub</a></li>
-									</ul>
-								</article>
 
 
-
-								<article>
+								<article class="project-info">
 									<header>
 										<h2>Book Data Collection</h2>
+										<p class="project-description">Data Collection</p>
 									</header>
+
 									<!-- Photo Credit: https://unsplash.com/@syinq -->
+									<a href="https://github.com/johng034/mit-books" target="_blank" class="image fit project-image"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" /></a>
 									
-									<!-- <a href="https://github.com/johng034/mit-books" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></a> -->
-									<a href="https://github.com/johng034/mit-books" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" /></a>
-									<p style="text-indent: 30px;">
+									<p class="technologies"><strong>Technologies Used</strong>: Google Cloud Platform (<em>BigQuery</em>), SQL, Python (<em>BeautifulSoup, NumPy, RegEx</em>)</p>
+									<p class="first-paragraph">
 										I visited Venice Beach in California with my family a few months ago, and while walking around I came across a bookstore called <em>Small World Books</em>. 
 										At the time, I had recently gotten back into reading and was excited to find a new book. 
-										That's when I noticed a collection of books that were part of the MIT Press Essential Knowledge series<span id=dots3>...</span>
+										That's when I noticed a collection of books that were part of the MIT Press Essential Knowledge series<span class="dots">...</span>
 									</p>
-									<span id="booksMore">
+
+									<span class="hidden-text">
 										<p>
 											The MIT Press Essential Knowledge series is a collection of books that discusses several topics for a non-specialist audience. 
 											The topics include neuroplasticity, data science, post-truth, recycling, GPS, and <em>many</em> more. 
@@ -241,19 +241,90 @@
 									</span>
 									<ul class="actions stacked">
 										<!-- <li><a href="#" class="primary button">Check it out</a></li> -->
-										<li><button id = "booksReadMore" onclick="booksReadMore()">Read more</button></li>
+										<li><button id="5" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
 										<li><a href="https://github.com/johng034/mit-books" target="_blank" class="primary button">GitHub</a></li>
 									</ul>
 								</article>
+
+
+								<article class="project-info">
+									<header>
+										<h2>Product Sales Analysis</h2>
+										<p class="project-description">Data Visualization</p>
+									</header>
+									<a href="https://public.tableau.com/views/CustomerAnalysis_16517054386160/PurchasesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit project-image"><img src="https://public.tableau.com/static/images/Cu/CustomerAnalysis_16517054386160/PurchasesDashboard/4_3.png" alt="" /></a>
+									
+									<p class="technologies"><strong>Technologies Used</strong>: Tableau, Python (<em>seaborn, pandas</em>)</p>
+									
+									<p class="first-paragraph">
+										Looking at customer purchasing patterns gives us valuable information to improve our service. 
+										At a glance, this <a href="https://public.tableau.com/app/profile/john1232/viz/CustomerAnalysis_16517054386160/PurchasesDashboard" target="_blank">Tableau dashboard</a> provides the most up to date information on purchases, including the number of products sold within the last 30 days, which products are selling the most, and results from past marketing campaigns.<span class="dots">...</span>
+									</p> 									
+
+									<span class="hidden-text">
+										<p>
+											From the <a href="https://public.tableau.com/app/profile/john1232/viz/CustomerAnalysis_16517054386160/PurchasesDashboard" target="_blank">dashboard</a>, we learn that:
+											<ul class="results">
+												<li><strong>Wine sales</strong> account for <strong>50%</strong> of all purchases.</li>
+												<li>Almost <strong>half</strong> of the purchases are made <strong>in-store</strong>.</li>
+												<li>The second marketing campaign performed <strong>poorly</strong> compared to the other campaigns. This should be further looked into.</li>
+											</ul>
+										</p>
+										<p>
+											We also used the data to train a <em>K Means clustering algorithm</em>. The resulting dataset is split into <strong>three clusters</strong>.
+										</p>
+									</span>
+
+									<ul class="actions stacked">
+										<li><button id="1" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+										<li><a href="https://public.tableau.com/views/CustomerAnalysis_16517054386160/PurchasesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
+										<li><a href="https://github.com/johng034/customer-segmentation" target="_blank" class="button">GitHub</a></li>
+									</ul>
+								</article>
+								
+
+								<article class="project-info">
+									<header>
+										<h2>Git Repository Automation</h2>
+										<p class="project-description">Automation</p>
+									</header>
+									<!-- Photo Credit: https://unsplash.com/@synkevych-->
+									<a href="https://github.com/johng034/Automated-Repo-Initialization" target="_blank" class="image fit project-image"><img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1488&q=80" alt="" /></a>
+									
+									<p class="technologies"><strong>Technologies Used</strong>: Bash, Batch, Python (<em>GitHub API</em>)</p>
+									<p class="first-paragraph">
+										Creating a new repository is not very time-consuming, but it can be a bit annoying. In my case, it can also be somewhat confusing because I manage two GitHub profiles, 
+										one is used for learning/schoolwork and the other is used for professional work and personal projects<span class="dots">...</span>
+									</p>
+									<span class="hidden-text">
+										<p>
+											The steps I used to take when creating a new repository were: create the repository on GitHub with the correct account, clone the repository, configure the correct username and email, and finally open an IDE to begin working. 
+										</p>
+										<p>
+											As previously stated, this does not take too much time, but it would be nice to have a function that would do all these steps for me, so that's what I created. 
+											For this project, I used the <b>GitHub API</b> with <b>Python</b> to set up a repository with the correct account. Each GitHub repository is cloned into the correct folder to make it easier to manage all the projects. 
+											Now, instead of writing multiple lines of code to set up the repo, I can just type <code>create work new-project</code> and everything else gets taken care of.
+										</p>
+									</span>
+									<ul class="actions stacked">
+										<!-- <li><a href="#" class="primary button">Check it out</a></li> `-->
+										<li><button id="6" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+										<li><a href="https://github.com/johng034/Automated-Repo-Initialization" target="_blank" class="primary button">GitHub</a></li>
+									</ul>
+								</article>
+
 					
-								<!-- <article>
+								<!-- <article class="project-info">
 									<header>
 										<h2>Reinforcement Learning Maze</h2>
+										<p class="project-description">Reinforcement Learning</p>
 									</header>
-									<a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit" style="max-width: 100%; height: auto;"><img src="https://public.tableau.com/static/images/Ca/CaseStudy_16518621735350/GrowthPotential/4_3.png" alt="" /></a>
-									<p style="text-indent: 30px;">Beginning of the description for the project<span id=dots0>...</span></p> 									
+									<a href="https://github.com/johng034/RL-Maze" target="_blank" class="image fit project-image"><img src="https://images.unsplash.com/photo-1574390353491-92705370c72e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1428&q=80" alt="" /></a>
 									
-									<span id="temp">
+									<p class="technologies"><strong>Technologies Used</strong>: Python</p>
+									<p class="first-paragraph">Beginning of the description for the project<span class="dots">...</span></p> 									
+									
+									<span class="hidden-text">
 										<p>
 											The rest of the description
 										</p>
@@ -263,20 +334,28 @@
 									</span>
 
 									<ul class="actions stacked">
-										<li><button id="languageReadMore" onclick="placement()">Read more</button></li>
-										<li><a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/bellabeat-case-study" target="_blank" class="button">GitHub</a></li>
+										<li><button id="7" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+										<li><a href="#" target="_blank" class="button">Check it out</a></li>
+										<li><a href="https://github.com/johng034/RL-Maze" target="_blank" class="primary button">GitHub</a></li>
 									</ul>
 								</article> -->
 
-								<!-- <article>
-									<blockquote>Insert quote here and make sure you center it. You may want to increase the font size as well</blockquote>
-								</article> -->
 
+								<article>
+									<h2>Favorite Quote</h2>
+									<blockquote>The cowards never started and the weak died along the way. That leaves us, ladies and gentlemen. Us.</blockquote>
+									<header><p class="knight-quote">— Phil Knight, Shoe Dog</p></header>
+									<!-- <hr /> -->
+								</article>
 
 							</section>
 
-						<!-- Footer -->
+							<!-- <article>
+								<h2>Favorite Quote</h2>
+								<blockquote>The cowards never started and the weak died along the way. That leaves us, ladies and gentlemen. Us.</blockquote>
+								<header><p class="knight-quote">— Phil Knight, Shoe Dog</p></header>
+							</article> -->
+
 
 					</div>
 
