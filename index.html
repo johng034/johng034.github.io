@@ -38,7 +38,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
 							<li><a href="aboutme.html">About Me</a></li>
 							<li><a href="contact.html">Contact</a></li>
 							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
@@ -52,312 +53,182 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+				<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2 style="font-size: 350%;">Projects</h2>
+					<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1 style="font-size: 350%;">John Gonzalez</h1>
+								<p>Data Analyst | Natural Language Processing Engineer | Data Scientist</p>
+							</header>
+						</section>
+
+						<section class="post">
+							<header class="major">
+								<h1 style="font-size: 250%;">Areas of Interest</h1>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-small">
+
+									<!-- <img src="https://img.icons8.com/fluency-systems-regular/96/000000/website-analytics.png"/> -->
+									<!-- <img src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/000000/external-statistics-business-kmg-design-detailed-outline-kmg-design.png"/> -->
+									<img src="https://img.icons8.com/wired/64/000000/combo-chart--v1.png"/>
+									<h3>Data Analysis</h3>
+									<p>
+										I specialize in generating insights from datasets. Whether it be creating Tableau dashboards or analyzing data in Excel, I am ready to tackle any business problem and find a solution.
+									</p>
+
+									<img src="https://img.icons8.com/wired/64/000000/average-value.png"/>
+									<h3>Data Science/Machine Learning</h3>
+									<p>
+										Data science sits in the middle of computer science, mathematics and statistics, and business knowledge. With the right data, many business questions can be answered with the use of machine learning algorithms
+									</p>
+									
+								
+								</div>
+
+								<div class="col-6 col-12-small">
+
+									<img src="https://img.icons8.com/wired/64/000000/translation.png"/>
+									<h3> Natural Language Processing</h3>
+									<p>
+										As someone who is passionate about languages and programming, natural language processing (NLP) is such an interesting field to me. Text analytics can be useful when solving business problems.
+									</p>
+
+									<!-- <img src="https://img.icons8.com/ios/100/000000/big-data.png"/> -->
+									<img src="https://img.icons8.com/wired/64/000000/database.png"/>
+									<h3>Data Collection</h3>
+									<p>
+										It all starts with the right data. Ensuring high quality data collection is an essential first step in any data analysis process. As the saying goes, "garbage in, garbage out."
+									</p>
+
+								</div>
+
+
+							</div>
+
+						</section>
+
+						<section class="post featured" style="padding-bottom:0px;">
+							<header class="major">
+								<h2 style="font-size: 250%;">Projects</h2>
+							</header>
+							<p style="text-align: center;">
+								These are some of my favorite projects I've worked on!<br>
+								You can visit my <a href="projects.html">Projects page</a> or check out my <a href="https://github.com/johng034" target="_blank">GitHub profile</a>.
+							</p>
+						</section>
+		
+						<section class="posts">
+
+							<article class="project-info">
+								<header>
+									<h2>Resume Review</h2>
+									<p class="project-description">Natural Language Processing (NLP)</p>
 								</header>
-								<p style="text-align: center;">
-									Hey there, my name is John and welcome to my portfolio!<br>
-									Below are some projects I have done along with a brief explanation of why and how I completed each project.<br>
-									To check out the code for any of these projects, please visit my <a href="https://github.com/johng034" target="_blank">GitHub profile</a>.
-								</p>
-								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
-								<!-- <ul class="actions stacked"> -->
-									<!-- <li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button large">Check it out</a></li> -->
-									<!-- <li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button large">GitHub Repo</a></li> -->
-								<!-- </ul> -->
+								<a href="https://johng034-keyword-collector-app-a2gjm1.streamlitapp.com/" target="_blank" class="image fit project-image"><img src="./images/resume-review.png" alt="" /></a>
+								
+								<p class="technologies"><strong>Technologies Used</strong>: Python <em>(pandas, RegEx, scikit-learn, Streamlit)</em></p>
+								<p class="first-paragraph">The job search process can be quite difficult and time-consuming, especially for those starting their careers or switching careers. During my search, I noticed that the “Data Analyst” role can vary from company to company. 
+									To increase the probability of receiving a callback, I tailor my resume for each application by including keywords found in the job description.<span class="dots">...</span></p> 									
+								
+								<span class="hidden-text">
+									<p>
+										There are websites that help you acomplish this task, such as <a href="https://resumeworded.com/index.php" target="_blank">Resume Worded</a> and <a href="https://www.jobscan.co/" target="_blank">Jobscan</a>, but these are paid services. Therefore, I created this free web application to help job seekers.
+									</p>
+									<p>
+										This web app works by selecting the most frequent words in the job description. Then the application parses your resume to see which keywords are included.
+										For example, if "<em>SQL</em>" gets mentioned numerous times, we may assume it is important, so we check if your resume contains the word "<em>SQL</em>".
+									</p>
+									<p>
+										Finally, a percentage score is generated. 0% means that no keywords are included, whereas 100% means that all the keywords are included. The user can see which keywords are included or missing and modify their resume accordingly.
+									</p>
+								</span>
+
+								<ul class="actions stacked">
+									<li><button id="0" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+									<li><a href="https://johng034-keyword-collector-app-a2gjm1.streamlitapp.com/" target="_blank" class="primary button">Check it out</a></li>
+									<li><a href="https://github.com/johng034/keyword-collector" target="_blank" class="button">GitHub</a></li>
+								</ul>
 							</article>
 
-						<!-- Posts -->
-							<section class="posts">
 
-								<article class="project-info">
-									<header>
-										<h2>Resume Review</h2>
-										<p class="project-description">Natural Language Processing (NLP)</p>
-									</header>
-									<a href="https://johng034-keyword-collector-app-a2gjm1.streamlitapp.com/" target="_blank" class="image fit project-image"><img src="./images/resume-review.png" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Python <em>(pandas, RegEx, scikit-learn, Streamlit)</em></p>
-									<p class="first-paragraph">The job search process can be quite difficult and time-consuming, especially for those starting their careers or switching careers. During my search, I noticed that the “Data Analyst” role can vary from company to company. 
-										To increase the probability of receiving a callback, I tailor my resume for each application by including keywords found in the job description.<span class="dots">...</span></p> 									
-									
-									<span class="hidden-text">
-										<p>
-											There are websites that help you acomplish this task, such as <a href="https://resumeworded.com/index.php" target="_blank">Resume Worded</a> and <a href="https://www.jobscan.co/" target="_blank">Jobscan</a>, but these are paid services. Therefore, I created this free web application to help job seekers.
-										</p>
-										<p>
-											This web app works by selecting the most frequent words in the job description. Then the application parses your resume to see which keywords are included.
-											For example, if "<em>SQL</em>" gets mentioned numerous times, we may assume it is important, so we check if your resume contains the word "<em>SQL</em>".
-										</p>
-										<p>
-											Finally, a percentage score is generated. 0% means that no keywords are included, whereas 100% means that all the keywords are included. The user can see which keywords are included or missing and modify their resume accordingly.
-										</p>
-									</span>
-
-									<ul class="actions stacked">
-										<li><button id="0" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://johng034-keyword-collector-app-a2gjm1.streamlitapp.com/" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/keyword-collector" target="_blank" class="button">GitHub</a></li>
-									</ul>
-								</article>
-
-
-								<article class="project-info">
-									<header>
-										<h2>Bellabeat Case Study</h2>
-										<p class="project-description">Data Visualization</p>
-									</header>
-									<a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit project-image"><img src="https://public.tableau.com/static/images/Ca/CaseStudy_16518621735350/GrowthPotential/4_3.png" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Tableau, Python <em>(Matplotlib, pandas)</em></p>
-									
-									<p class="first-paragraph">
-										It's helpful to know how your users navigate your application. With this information, we could improve the functionality and user experience. 
-										For this project, I analyzed data from Fitbit users to provide a recommendation for Bellabeat, a wellness company that develops fitness products for women.
-										<span class="dots">...</span>
-									</p> 									
-
-									<span class="hidden-text">
-										<p>
-											There are two dashboards included in this project. The <a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">first dashboard</a> shows:
-											<ul class="results">
-												<li><strong>72%</strong> of users logged sleep data, but only 24% of users logged bodyweight data.</li>
-												<li><strong>61%</strong> of users who logged their bodyweight did so manually.</li>
-												<li>Most users slept on average between <strong>6 to 9 hours</strong> per night.</li><em></em>
-												<li>The histogram for calories burned is <em>bimodal</em>, meaning that there are two groups within the dataset. Most burn around <strong>2,000 calories</strong> per day while some burn closer to <strong>2,750 calories</strong> per day.</li>
-											</ul>
-										</p>
-										<p>
-											The <a href="https://public.tableau.com/views/FitbitUserDataOverview/PopularFeatures?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">second dashboard</a> can be found on my <a href="https://public.tableau.com/app/profile/john1232" target="_blank">Tableau profile</a>.
-										</p>
-									</span>
-
-									<ul class="actions stacked">
-										<li><button id="1" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/bellabeat-case-study" target="_blank" class="button">GitHub</a></li>
-									</ul>
-								</article>
-
-
-								<article class="project-info">
-									<header>
-										<h2>Language Classifier</h2>
-										<p class="project-description">Supervised Machine Learning</p>
-									</header>
-									<a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="image fit project-image"><img src="./images/language-classifier.png" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Python (<em>nltk, NumPy, pandas, scikit-learn, Streamlit</em>)</p>
-									<p class="first-paragraph">As an avid language learner, I enjoy listening to others speak foreign languages. Sometimes, I'll make a sorry attempt at guessing the language.
-										So I thought it would be interesting if I could create a model that ideally could do much better<span class="dots">...</span></p> 									
-
-									<span class="hidden-text">
-										<p>
-											For this project, I created a model using the <b>Random Forest classification</b> algorithm to predict the language of typed text. 
-									   		The data for this project came from the <a href="https://zenodo.org/record/841984#.YntTCejMJhE" target="_blank"><em>Wikipedia Language Identification Database</em>.</a>
-										</p>
-										<p>
-											The Random Forest algorithm outperformed the Naive Bayes and K Nearest Neighbors algorithms. 
-											After training the algorithm, I created a web app using Streamlit to allow users to try it out for themselves
-										</p>
-									</span>
-
-									<ul class="actions stacked">
-										<li><button id="2" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button">GitHub</a></li>
-									</ul>
-								</article>
-
-
-								<article class="project-info">
-									<header>
-										<h2>Vocabulary Builder</h2>
-										<p class="project-description">Data Collection and Processing</p>
-									</header>
-									<a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="image fit project-image"><img src="./images/common-words.png" alt=""></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Python (<em>nltk, pandas, RegEx, scikit-learn, Streamlit</em>), Twitter API</p>
-									<p class="first-paragraph">Vocabulary is very important when learning a new language. One of the most effective ways to increase one's lexicon is to study 
-										the most common words in a language. The goal of this project was to find the most common words used in tweets<span class="dots">...</span></p> 
-
-										<span class="hidden-text">
-											<p>
-												For this project, I used the <b>Twitter API</b> with the <b>Tweepy</b> library to collect 200 tweets from 10 profiles in 5 different languages. This would result in 10,000 tweets in total 
-												(in reality, this number came out lower because some of the accounts did not have 200 tweets on their profile or some tweets were only emojis). 
-											</p>
-											<p>
-												After cleaning the data, I calculated the word frequencies and created a word cloud for each language.
-												Using the data collected, I published a web app with <b>Streamlit</b> where the user can view the top <em>x</em> number of words in both tabular form and as a word cloud for each languages.
-											</p>
-										</span>
-									<ul class="actions stacked">
-										<li><button id="3" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://share.streamlit.io/johng034/language-tweets/app.py" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/language-tweets" target="_blank" class="button">GitHub</a></li>
-									</ul>
-								</article>
-
-
-								<article class="project-info">
-									<header>
-										<h2>Book Data Collection</h2>
-										<p class="project-description">Data Collection</p>
-									</header>
-
-									<!-- Photo Credit: https://unsplash.com/@syinq -->
-									<a href="https://github.com/johng034/mit-books" target="_blank" class="image fit project-image"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Google Cloud Platform (<em>BigQuery</em>), SQL, Python (<em>BeautifulSoup, NumPy, RegEx</em>)</p>
-									<p class="first-paragraph">
-										I visited Venice Beach in California with my family a few months ago, and while walking around I came across a bookstore called <em>Small World Books</em>. 
-										At the time, I had recently gotten back into reading and was excited to find a new book. 
-										That's when I noticed a collection of books that were part of the MIT Press Essential Knowledge series<span class="dots">...</span>
-									</p>
-
-									<span class="hidden-text">
-										<p>
-											The MIT Press Essential Knowledge series is a collection of books that discusses several topics for a non-specialist audience. 
-											The topics include neuroplasticity, data science, post-truth, recycling, GPS, and <em>many</em> more. 
-											The beginning of every book in the series contains a short foreward, a section from this foreword reads, 
-											<blockquote>
-												“In today's era of instant gratification, we have ready access to opinions, rationalizations, and superficial descriptions. 
-												Much harder to come by is the foundational knowledge that informs a principled understanding of the world. Essential Knowledge books fill that need.” <br>— Bruce Tidor, MIT Professor
-										</blockquote>
-										</p>
-										<p>
-											I highly value education and learning; I'm constantly working on learning new skills and gaining an understanding of topics I'm not very familiar with. 
-											In my opinion, every book from this series is an amazing resource to get a high-level understanding of various topics.
-										</p>
-										<p>
-											My goal for this project was to create a file that contains data on the books in the series. 
-											I accomplished this by <b>web scraping</b> text from the <a href="https://mitpress.mit.edu/books/series/mit-press-essential-knowledge-series" target="_blank">MIT Press public website</a>. 
-											After finishing the project, I can now easily refer to this spreadsheet to find the next book to read.
-										</p>
-									</span>
-									<ul class="actions stacked">
-										<!-- <li><a href="#" class="primary button">Check it out</a></li> -->
-										<li><button id="4" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://github.com/johng034/mit-books" target="_blank" class="primary button">GitHub</a></li>
-									</ul>
-								</article>
-
-
-								<article class="project-info">
-									<header>
-										<h2>Product Sales Analysis</h2>
-										<p class="project-description">Data Visualization</p>
-									</header>
-									<a href="https://public.tableau.com/views/CustomerAnalysis_16517054386160/PurchasesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit project-image"><img src="https://public.tableau.com/static/images/Cu/CustomerAnalysis_16517054386160/PurchasesDashboard/4_3.png" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Tableau, Python (<em>seaborn, pandas</em>)</p>
-									
-									<p class="first-paragraph">
-										Looking at customer purchasing patterns gives us valuable information to improve our service. 
-										At a glance, this <a href="https://public.tableau.com/app/profile/john1232/viz/CustomerAnalysis_16517054386160/PurchasesDashboard" target="_blank">Tableau dashboard</a> provides the most up to date information on purchases, including the number of products sold within the last 30 days, which products are selling the most, and results from past marketing campaigns.<span class="dots">...</span>
-									</p> 									
-
-									<span class="hidden-text">
-										<p>
-											From the <a href="https://public.tableau.com/app/profile/john1232/viz/CustomerAnalysis_16517054386160/PurchasesDashboard" target="_blank">dashboard</a>, we learn that:
-											<ul class="results">
-												<li><strong>Wine sales</strong> account for <strong>50%</strong> of all purchases.</li>
-												<li>Almost <strong>half</strong> of the purchases are made <strong>in-store</strong>.</li>
-												<li>The second marketing campaign performed <strong>poorly</strong> compared to the other campaigns. This should be further looked into.</li>
-											</ul>
-										</p>
-										<p>
-											We also used the data to train a <em>K Means clustering algorithm</em>. The resulting dataset is split into <strong>three clusters</strong>.
-										</p>
-									</span>
-
-									<ul class="actions stacked">
-										<li><button id="5" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://public.tableau.com/views/CustomerAnalysis_16517054386160/PurchasesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/customer-segmentation" target="_blank" class="button">GitHub</a></li>
-									</ul>
-								</article>
+							<article class="project-info">
+								<header>
+									<h2>Bellabeat Case Study</h2>
+									<p class="project-description">Data Visualization</p>
+								</header>
+								<a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="image fit project-image"><img src="https://public.tableau.com/static/images/Ca/CaseStudy_16518621735350/GrowthPotential/4_3.png" alt="" /></a>
 								
+								<p class="technologies"><strong>Technologies Used</strong>: Tableau, Python <em>(Matplotlib, pandas)</em></p>
+								
+								<p class="first-paragraph">
+									It's helpful to know how your users navigate your application. With this information, we could improve the functionality and user experience. 
+									For this project, I analyzed data from Fitbit users to provide a recommendation for Bellabeat, a wellness company that develops fitness products for women.
+									<span class="dots">...</span>
+								</p> 									
 
-								<article class="project-info">
-									<header>
-										<h2>Git Repository Automation</h2>
-										<p class="project-description">Automation</p>
-									</header>
-									<!-- Photo Credit: https://unsplash.com/@synkevych-->
-									<a href="https://github.com/johng034/Automated-Repo-Initialization" target="_blank" class="image fit project-image"><img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1488&q=80" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Bash, Batch, Python (<em>GitHub API</em>)</p>
-									<p class="first-paragraph">
-										Creating a new repository is not very time-consuming, but it can be a bit annoying. In my case, it can also be somewhat confusing because I manage two GitHub profiles, 
-										one is used for learning/schoolwork and the other is used for professional work and personal projects<span class="dots">...</span>
+								<span class="hidden-text">
+									<p>
+										There are two dashboards included in this project. The <a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">first dashboard</a> shows:
+										<ul class="results">
+											<li><strong>72%</strong> of users logged sleep data, but only 24% of users logged bodyweight data.</li>
+											<li><strong>61%</strong> of users who logged their bodyweight did so manually.</li>
+											<li>Most users slept on average between <strong>6 to 9 hours</strong> per night.</li><em></em>
+											<li>The histogram for calories burned is <em>bimodal</em>, meaning that there are two groups within the dataset. Most burn around <strong>2,000 calories</strong> per day while some burn closer to <strong>2,750 calories</strong> per day.</li>
+										</ul>
 									</p>
-									<span class="hidden-text">
-										<p>
-											The steps I used to take when creating a new repository were: create the repository on GitHub with the correct account, clone the repository, configure the correct username and email, and finally open an IDE to begin working. 
-										</p>
-										<p>
-											As previously stated, this does not take too much time, but it would be nice to have a function that would do all these steps for me, so that's what I created. 
-											For this project, I used the <b>GitHub API</b> with <b>Python</b> to set up a repository with the correct account. Each GitHub repository is cloned into the correct folder to make it easier to manage all the projects. 
-											Now, instead of writing multiple lines of code to set up the repo, I can just type <code>create work new-project</code> and everything else gets taken care of.
-										</p>
-									</span>
-									<ul class="actions stacked">
-										<!-- <li><a href="#" class="primary button">Check it out</a></li> `-->
-										<li><button id="6" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="https://github.com/johng034/Automated-Repo-Initialization" target="_blank" class="primary button">GitHub</a></li>
-									</ul>
-								</article>
+									<p>
+										The <a href="https://public.tableau.com/views/FitbitUserDataOverview/PopularFeatures?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">second dashboard</a> can be found on my <a href="https://public.tableau.com/app/profile/john1232" target="_blank">Tableau profile</a>.
+									</p>
+								</span>
 
-					
-								<!-- <article class="project-info">
-									<header>
-										<h2>Reinforcement Learning Maze</h2>
-										<p class="project-description">Reinforcement Learning</p>
-									</header>
-									<a href="https://github.com/johng034/RL-Maze" target="_blank" class="image fit project-image"><img src="https://images.unsplash.com/photo-1574390353491-92705370c72e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1428&q=80" alt="" /></a>
-									
-									<p class="technologies"><strong>Technologies Used</strong>: Python</p>
-									<p class="first-paragraph">Beginning of the description for the project<span class="dots">...</span></p> 									
-									
-									<span class="hidden-text">
-										<p>
-											The rest of the description
-										</p>
-										<p>
-											Can have multiple paragraphs
-										</p>
-									</span>
-
-									<ul class="actions stacked">
-										<li><button id="7" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
-										<li><a href="#" target="_blank" class="button">Check it out</a></li>
-										<li><a href="https://github.com/johng034/RL-Maze" target="_blank" class="primary button">GitHub</a></li>
-									</ul>
-								</article> -->
+								<ul class="actions stacked">
+									<li><button id="1" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+									<li><a href="https://public.tableau.com/views/CaseStudy_16518621735350/GrowthPotential?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="primary button">Check it out</a></li>
+									<li><a href="https://github.com/johng034/bellabeat-case-study" target="_blank" class="button">GitHub</a></li>
+								</ul>
+							</article>
 
 
-								<article>
-									<h2>Favorite Quote</h2>
-									<blockquote>The cowards never started and the weak died along the way. That leaves us, ladies and gentlemen. Us.</blockquote>
-									<header><p class="knight-quote">— Phil Knight, Shoe Dog</p></header>
-									<!-- <hr /> -->
-								</article>
+							<article class="project-info">
+								<header>
+									<h2>Language Classifier</h2>
+									<p class="project-description">Supervised Machine Learning</p>
+								</header>
+								<a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="image fit project-image"><img src="./images/language-classifier.png" alt="" /></a>
+								
+								<p class="technologies"><strong>Technologies Used</strong>: Python (<em>nltk, NumPy, pandas, scikit-learn, Streamlit</em>)</p>
+								<p class="first-paragraph">As an avid language learner, I enjoy listening to others speak foreign languages. Sometimes, I'll make a sorry attempt at guessing the language.
+									So I thought it would be interesting if I could create a model that ideally could do much better<span class="dots">...</span></p> 									
 
-							</section>
+								<span class="hidden-text">
+									<p>
+										For this project, I created a model using the <b>Random Forest classification</b> algorithm to predict the language of typed text. 
+										   The data for this project came from the <a href="https://zenodo.org/record/841984#.YntTCejMJhE" target="_blank"><em>Wikipedia Language Identification Database</em>.</a>
+									</p>
+									<p>
+										The Random Forest algorithm outperformed the Naive Bayes and K Nearest Neighbors algorithms. 
+										After training the algorithm, I created a web app using Streamlit to allow users to try it out for themselves
+									</p>
+								</span>
 
-							<!-- <article>
-								<h2>Favorite Quote</h2>
-								<blockquote>The cowards never started and the weak died along the way. That leaves us, ladies and gentlemen. Us.</blockquote>
-								<header><p class="knight-quote">— Phil Knight, Shoe Dog</p></header>
-							</article> -->
+								<ul class="actions stacked">
+									<li><button id="2" class="read-more-button" onclick="readMore(this.id)">Read more</button></li>
+									<li><a href="https://share.streamlit.io/johng034/language-classifier/app.py" target="_blank" class="primary button">Check it out</a></li>
+									<li><a href="https://github.com/johng034/Language-Classifier" target="_blank" class="button">GitHub</a></li>
+								</ul>
+							</article>
 
 
-					</div>
+							<article>
+								<a href="projects.html" class="button primary large">See all projects</a>
+							</article>
+
+						</section>
+
+				</div>
+			
 
 				<!-- Footer -->
 					<footer id="footer">
