@@ -27,3 +27,12 @@
     max-width: 100%; 
     height: auto;
 }
+
+.normal-text {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bigger-font {
+    font-size: larger;
+}
